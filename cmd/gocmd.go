@@ -97,6 +97,8 @@ func main() {
 	subcmd.AddBcleanCommand(rootCmd)
 	subcmd.AddUpgradeCommand(rootCmd)
 
+	subcmd.AddWebServerCommand(rootCmd)
+
 	err := Execute()
 	if err != nil {
 		logger.Errorf("%+v", err)
